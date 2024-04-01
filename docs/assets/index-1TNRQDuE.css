@@ -4454,14 +4454,11 @@ video {
     margin-right: 0.25rem;
 }
 @font-face {
-    font-family: Gilroy ExtraBold;
+    font-family: Gilroy;
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src:
-        local("Gilroy ExtraBold"),
-        url(/apl-architecture/theme/fonts/Gilroy-ExtraBold.otf) format("opentype"),
-        url(/apl-architecture/theme/fonts/Gilroy-ExtraBold.woff) format("woff");
+    src: url(/apl-architecture/theme/fonts/Gilroy-ExtraBold.woff);
 }
 :root {
     --slidev-theme-primary: #3e5166;
