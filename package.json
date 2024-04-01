@@ -2,7 +2,7 @@
     "name": "web-perf-bp3",
     "private": true,
     "scripts": {
-        "build": "slidev build",
+        "build": "slidev build --out docs",
         "dev": "slidev --open",
         "export": "slidev export"
     },

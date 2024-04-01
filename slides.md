@@ -5,7 +5,7 @@ highlighter: shiki
 drawings:
   persist: false
 transition: slide-left
-title: Performant Websites with Remix
+title: APL Website Architecture
 layout: intro
 ---
 
