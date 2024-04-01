@@ -1,0 +1,19 @@
+{
+    "name": "web-perf-bp3",
+    "private": true,
+    "scripts": {
+        "build": "slidev build",
+        "dev": "slidev --open",
+        "export": "slidev export"
+    },
+    "dependencies": {
+        "sass": "^1.63.6",
+        "slidev-theme-penguin": "^2.1.2",
+        "vite-svg-loader": "^4.0.0",
+        "vue-demi": "^0.14.7"
+    },
+    "devDependencies": {
+        "@iconify-json/logos": "^1.1.33",
+        "@slidev/cli": "^0.48.0-beta.22"
+    }
+}
