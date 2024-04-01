@@ -9,7 +9,7 @@ title: APL Website Architecture
 layout: intro
 ---
 
-# Austin Public Library Website Architecture
+# APL Website Architecture
 
 <!--
 These are several different techniques we could employ to make the APL website run faster. 
