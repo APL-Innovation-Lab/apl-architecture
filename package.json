@@ -2,7 +2,7 @@
     "name": "web-perf-bp3",
     "private": true,
     "scripts": {
-        "build": "slidev build --out docs",
+        "build": "slidev build --out docs --base /apl-architecture",
         "dev": "slidev --open",
         "export": "slidev export"
     },
