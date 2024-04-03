@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"); */
+
 @font-face {
-  font-family: 'Gilroy ExtraBold';
-  font-style: normal;
-  font-weight: bold;
-  font-display: swap;
-  src: local('Gilroy ExtraBold'), url('/fonts/Gilroy-ExtraBold.otf') format('opentype'),
-    url('/fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/apl-architecture/theme/fonts/Gilroy-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 800;
+    src: url("/apl-architecture/theme/fonts/Gilroy-ExtraBold.woff2");
 }

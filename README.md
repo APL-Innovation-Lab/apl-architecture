@@ -1,11 +1,17 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Austin Public Library Website Architecture
 
-To start the slide show:
+> Different techniques we could employ to make the [APL website](https://library.austintexas.gov) run faster and ways we could architect the new front-end
 
-- `npm install`
-- `npm run dev`
-- visit http://localhost:3030
+Start the presentation locally:
 
-Edit the [slides.md](./slides.md) to see the changes.
+```sh
+npm run dev
+```
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+You can view an online version of the presentation at:
+
+https://markmals.github.io/apl-architecture
+
+And the version with the presenter's notes here:
+
+https://markmals.github.io/apl-architecture/presenter

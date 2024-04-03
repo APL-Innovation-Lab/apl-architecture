@@ -1,19 +1,18 @@
 {
-    "name": "web-perf-bp3",
     "private": true,
     "scripts": {
-        "build": "slidev build --out docs --base /apl-architecture",
         "dev": "slidev --open",
-        "export": "slidev export"
+        "build": "slidev build",
+        "build-local": "slidev build --base /apl-architecture"
     },
     "dependencies": {
-        "sass": "^1.63.6",
-        "slidev-theme-penguin": "^2.1.2",
-        "vite-svg-loader": "^4.0.0",
+        "sass": "^1.72.0",
+        "slidev-theme-penguin": "2.1.2",
+        "vite-svg-loader": "^5.1.0",
         "vue-demi": "^0.14.7"
     },
     "devDependencies": {
-        "@iconify-json/logos": "^1.1.33",
-        "@slidev/cli": "^0.48.0-beta.22"
+        "@iconify-json/logos": "^1.1.42",
+        "@slidev/cli": "^0.48.8"
     }
 }
