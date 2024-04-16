@@ -235,9 +235,7 @@ Instead of fetching all of the data and rendering the pages to static documents 
 
 ## Architecture Recommendations
 
-<v-clicks class="text-xl mt-4">
-
-<div>
+<div class="text-xl mt-4">
 
 ### Server Rendering
 
@@ -245,8 +243,6 @@ Instead of fetching all of the data and rendering the pages to static documents 
 * If we can server render, but want to use React: **Remix**
 
 <br />
-</div>
-<div>
 
 ### Client Rendering
 
@@ -255,14 +251,12 @@ Instead of fetching all of the data and rendering the pages to static documents 
 
 </div>
 
-</v-clicks>
-
 <!--
 If we're able to stand up a server in order to server-render pages, we have two options:
 
 The more exotic option is to use Astro with Preact Islands. Astro is an islands-first, server-first framework that has a syntax very similar to React's JSX. It would allow us to skip sending JavaScript to the client for everything that doesn't require in-browser interactions and still allow us to have smooth routing interactions using their new View Transitions router. For interactive portions of the page (islands), we can use Preact, which has an API identical to React, but has a much smaller bundle size for both the vendor packages and components.
 
-If we want to stick with React, we should use Remix, hands down. Remix embraces all of the aforementioned performance techniques and, while it has a larger bundle size because it's using React, which is quite heafty does full-page hydration (for now), it's by far and away the most performant React meta-framework.
+If we want to stick with React, we should use Remix, hands down. Remix embraces all of the aforementioned performance techniques and, while it has a larger bundle size because it's using React, which is quite hefty does full-page hydration (for now), it's by far and away the most performant React meta-framework.
 
 While it's not advisable, if we're not able to use a dedicated server for rendering the website, we have two other options for an entirely client-rendered website:
 
@@ -270,6 +264,25 @@ Remix also supports fully client-rendered websites. This allows us to continue t
 
 If we want to go truly incremental, replacing small portions of a page at a time with more modern code, while keeping the rest of the page server rendered by Drupal, we can utilize Preact and its small bundle size, or go with the more native (and possibly easier to embed?) web components using Lit. However, this will be the least performant option and the most challenging to architect.
 -->
+
+---
+
+## Incremental Choices
+
+### Replace Routes
+
+* Replace one route at a time (e.g. `/meeting-rooms`) with greenfield pages/apps built on new technologies
+* Could be done via Drupal or Nginx/reverse proxy configuration to redirect requests to different servers or client bundles
+* Allows incremental adoption of modern technologies without needing to wholesale replace everything at once
+
+<br />
+
+### Replace Components
+
+* Replace imperative front-end code with an embedded declarative framework (Preact or Lit web components)
+* Can embed directly in Drupal pages without needing to replace existing routes
+* Need to figure out a bundling strategy to keep from having waterfall requests
+* Juggling server rendering via Drupal and hydrating via the client-side framework might be more technically challenging
 
 ---
 layout: new-section
