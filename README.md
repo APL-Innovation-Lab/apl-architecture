@@ -10,8 +10,8 @@ npm run dev
 
 You can view an online version of the presentation at:
 
-https://markmals.github.io/apl-architecture
+https://apl-innovation-lab.github.io/apl-architecture
 
 And the version with the presenter's notes here:
 
-https://markmals.github.io/apl-architecture/presenter
+https://apl-innovation-lab.github.io/apl-architecture/presenter
